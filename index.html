@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
     <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
+<style>
+    .hum {
+        transition: 5s ease-in-out;
+    }
+</style>
 
-<body class="mt-5">
+<body class="mt-5 rtl">
 
     <div class="top-menu">
-        .<div class="container-fluid">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rtl">
+        <div class="container-fluid">
+            <nav class="navbar hum fixed-top navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="index.html">يوتيوبي</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-lg-auto">
@@ -42,39 +47,297 @@
                     </form>
                 </div>
             </nav>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">البريد الالكتروني:</label>
+                                <input type="email" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">كلمة المرور:</label>
+                                <input type="password" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="mx-auto">نسيت كلمة المرور</a>
+                        <a href="" class="mx-auto">إنشاء حساب</a>
+                        <button type="button" class="btn btn-primary">دخول</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!-- Modal -->
-            <div class="modal fade rtl" id="loginModal">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
-                            <button type="button" class="close" data-dismiss="modal">
-                            </button>
+        <!-- Cards -->
+        <div class="content m-4">
+            <h4 class="py-5">الفيديوهات المقترحة</h4>
+            <div class="row">
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/Bootstrap.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">تعلم اساسيات ال bootstrap</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 3آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i><samp> قبل 5اشهر</samp>
                         </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="email" class="col-form-label">البريد الالكتروني:</label>
-                                    <input type="email" class="form-control" id="recipient-name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-form-label">كلمة المرور:</label>
-                                    <input type="password" class="form-control" id="recipient-name">
-                                </div>
-                            </form>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/TheNewBaghdad.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">TheNewBaghdad</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/photoshop.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">كيفية تصميم شعار باستخدام الفوتوشوب</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 12آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i><samp> منذأسبوعين</samp>
                         </div>
-                        <div class="modal-footer">
-                            <a href="" class="mx-auto">نسيت كلمة المرور</a>
-                            <a href="" class="mx-auto">إنشاء حساب</a>
-                            <button type="button" class="btn btn-primary">دخول</button>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/NourDesign.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">Nour Design</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/Python.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">تعلم لغة البرمجة بايثون من الصفر</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 30آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>قبل5اشهر</samp>
                         </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels//codezilla.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">Codezilla</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/SEO.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">شرح مفصل لأساسيات الـ SEO</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 5آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ4أيام</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/inShort.jpg" alt="channel img" class="rounded-circle my-2 ml-3"
+                                width="30px">
+                            <span class="card-text">باختصار</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/MohamedElmasry.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">دورة كاملة في تطوير تطبيقات الأندرويد</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 50آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ سنة</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/MohamedElmasry.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">حمو سوفت</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/JavaScript.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">تعلم البرمجة باستخدام JavaScript</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 20آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ 3 أشه</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/AcademyTarmeez.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">Academy Tarmeez</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/WordPress.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">كيفية إنشاء موقع ويب باستخدام WordPress</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 15آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ 6 أشهر</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/Nology.jpg" alt="channel img" class="rounded-circle my-2 ml-3"
+                                width="30px">
+                            <span class="card-text">Nology</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/Procreate.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">خطوات تعلم الرسم الرقمي باستخدام Procreate</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 3آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ أسبوع</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/MahmoudZadah.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">MahmoudZadah</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/AI-Introdaction.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">مقدمة في الذكاء الاصطناعي وتعلم الآلة</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 30آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ شهرين</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/ch-logo.png" alt="channel img" class="rounded-circle my-2 ml-3"
+                                width="30px">
+                            <span class="card-text">اكاديمية حسوب</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/HTML-CSS.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">تصميم وتطوير المواقع باستخدام HTML و CSS</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 55آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ9أشهر</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/YehiaTech.jpg" alt="channel img" class="rounded-circle my-2 ml-3"
+                                width="30px">
+                            <span class="card-text">Yehia Tech</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/CV.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">كيفية كتابة السيرة الذاتية بشكل احترافي</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 8آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ3أسابيع</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/Dawerha.jpg" alt="channel img" class="rounded-circle my-2 ml-3"
+                                width="30px">
+                            <span class="card-text">Dawerha-دورها</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 mb-4">
+                        <a href="watch.html">
+                            <img src="img/thumbnail/gitrhub.png" class="card-img-top" alt="card img">
+                            <div class="card-body p-0">
+                                <p class="card-title">كيفية رفع المشروع على github</p>
+                            </div>
+                        </a>
+                        <div class="card-footer">
+                            <i class="fas fa-film"></i><samp> 19آلاف مشاهدة</samp>
+                            <i class="fa-regular fa-clock"></i> <samp>منذ5أيام</samp>
+                        </div>
+                        <a href="chanel.html" class="channel-img">
+                            <img src="img/logoChannels/AcademyTarmeez.png" alt="channel img"
+                                class="rounded-circle my-2 ml-3" width="30px">
+                            <span class="card-text">Academy Tarmeez</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="height: 1000px;"></div>
+    <script src="https://kit.fontawesome.com/975c5761fb.js" crossorigin="anonymous"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.js"></script>
