@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
     <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
-<style>
-    .hum {
-        transition: 5s ease-in-out;
-    }
-</style>
 
 <body class="mt-5 rtl">
 
     <div class="top-menu">
         <div class="container-fluid">
-            <nav class="navbar hum fixed-top navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="index.html">يوتيوبي</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent">
@@ -36,15 +31,16 @@
                             <a class="nav-link pl-0" href="#" tabindex="-1">الفيديوهات الرائجة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-info text-white" href="#" data-toggle="modal"
+                            <a class="nav-link btn-info text-white d-inline-block p-1" href="#" data-toggle="modal"
                                 data-target="#loginModal">تسجيل
                                 الدخول</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="ابحث الان">
+                        <button onclick="location.href='./search.html';" class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit">ابحث</button>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -78,7 +74,7 @@
             </div>
         </div>
 
-        <!-- Cards -->
+        <!-- Content Page-->
         <div class="content m-4">
             <h4 class="py-5">الفيديوهات المقترحة</h4>
             <div class="row">
